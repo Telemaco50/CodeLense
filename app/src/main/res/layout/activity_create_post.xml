@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tituloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        android:text="NOMBRE DEL POST"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_publicacion_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/nomUsuarioTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="241dp"
+        android:layout_marginBottom="11dp"
+        android:text="DESCRIPCIÓN"
+        app:layout_constraintBottom_toTopOf="@+id/desc_texvitw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_publicacion_edit_text" />
+
+    <EditText
+        android:id="@+id/titulo_publicacion_edit_text"
+        android:layout_width="309dp"
+        android:layout_height="66dp"
+        android:background="@drawable/caja_de_texto"
+        android:backgroundTint="#6B8F8E8E"
+        android:hint=" Post num 1"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221" />
+
+    <EditText
+        android:id="@+id/desc_texvitw"
+        android:layout_width="309dp"
+        android:layout_height="66dp"
+        android:background="@drawable/caja_de_texto"
+        android:backgroundTint="#6B8F8E8E"
+        android:hint=" Post num 1"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <TextView
+        android:id="@+id/numPosthtml"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:text="CONTENIDOS"
+        app:layout_constraintBottom_toTopOf="@+id/codigo_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_publicacion_edit_text"
+        app:layout_constraintVertical_bias="0.922" />
+
+    <EditText
+        android:id="@+id/codigo_edit_text"
+        android:layout_width="313dp"
+        android:layout_height="167dp"
+        android:background="@drawable/caja_de_texto"
+        android:backgroundTint="#808F8E8E"
+        android:hint="TextoAqui"
+        android:imeOptions="actionDone"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        android:stateListAnimator="@android:anim/fade_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_publicacion_edit_text"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <Button
+        android:id="@+id/crear_publicacion_button"
+        android:layout_width="162dp"
+        android:layout_height="57dp"
+        android:layout_gravity="start"
+        android:backgroundTint="#FF3366"
+        android:stateListAnimator="@android:anim/fade_in"
+        android:text="PUBLICAR"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codigo_edit_text"
+        app:layout_constraintVertical_bias="0.789" />
+
+    <Spinner
+        android:id="@+id/categoria_spinner"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FF3366"
+        android:backgroundTintMode="multiply"
+        android:contentDescription="@string/HTML"
+        app:layout_constraintBottom_toTopOf="@+id/crear_publicacion_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codigo_edit_text"
+        app:layout_constraintVertical_bias="0.676" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

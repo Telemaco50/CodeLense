@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/framecategoria"
+    tools:context=".pantallas.publicacionesXcategoria">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/publicacionesXcategoria">
+
+    <TextView
+        android:id="@+id/tituloGrandre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:text="EDITAR PERFIL"
+        android:textColor="#FF3366"
+        android:textSize="34sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <ListView
+        android:id="@+id/publicaciones_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="631dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
+</FrameLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framepost"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".pantallas.PostDetalleFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FBF6F6"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/post_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/audiowide"
+                android:text="TITULO"
+                android:textColor="#FF3366"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/post_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="descripcion"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/post_content"
+                android:layout_width="352dp"
+                android:layout_height="248dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/caja_de_texto"
+                android:backgroundTint="#131313"
+                android:text="TextView"
+                android:textSize="22sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="380dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/new_comment_edittext"
+                    android:layout_width="267dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/caja_de_texto"
+                    android:backgroundTint="@color/NegroTrans"
+                    android:hint="  Escribir comentario"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.032"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/new_comment_button"
+                    android:layout_width="64dp"
+                    android:layout_height="61dp"
+                    android:layout_below="@id/new_comment_edittext"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="330dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/caja_de_texto"
+                    android:backgroundTint="@color/RojoLogin"
+                    android:backgroundTintMode="src_over"
+                    android:drawableTint="#FF3366"
+                    android:foreground="@drawable/enviar"
+                    android:foregroundTint="@color/white"
+                    android:hapticFeedbackEnabled="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.714"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:rippleColor="#FF3366"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/comments_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/audiowide"
+                    android:text="COMENTARIOS"
+                    android:textColor="#FF3366"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/new_comment_button" />
+
+                <ListView
+                    android:id="@+id/comment_list"
+                    android:layout_width="356dp"
+                    android:layout_height="287dp"
+                    android:layout_weight="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/comments_title"
+                    app:layout_constraintVertical_bias="0.186" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+</FrameLayout>
