@@ -20,7 +20,7 @@ Codelens is a multimedia application and social network aimed at computer profes
 ### Installation
 Clone this repository to your local machine using:
 ```shell
-git clone https://github.com/yourgithubusername/codelens.git
+git clone https://github.com/Telemaco50/codelens.git
 ```
 
 ## Versioning
